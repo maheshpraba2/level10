@@ -1,2 +1,1 @@
-console.log("First JS import on an EJS application!");
-
+console.log("MAHESH");
