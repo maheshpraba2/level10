@@ -1,5 +1,3 @@
-
-
 "use strict";
 // hey
 /** @type {import('sequelize-cli').Migration} */
