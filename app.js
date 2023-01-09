@@ -24,10 +24,12 @@ const saltRound = 10;
 
 app.use(
   session({
-    secret: "my-secret-ket-232423234234234234",
+    secret: "my-secret-key-232423234234234234",
     cookie: {
       maxAge: 24 * 60 * 60 * 1000,
     },
+    resave: true,
+    saveUninitialized: true,
   })
 );
 
