@@ -1,8 +1,7 @@
 body {
-    font-family: monospace;
+  font-family: monospace;
+}
 
-  }
-
-  .todoItem:hover .trashIcone {
-    display: block;
-  }
+.todoItem:hover .trashIcone {
+  display: block;
+}
