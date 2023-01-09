@@ -24,12 +24,10 @@ const saltRound = 10;
 
 app.use(
   session({
-    secret: "my-secret-key-232423234234234234",
+    secret: "my-secret-ket-232423234234234234",
     cookie: {
       maxAge: 24 * 60 * 60 * 1000,
     },
-    resave: true,
-    saveUninitialized: true,
   })
 );
 
@@ -197,6 +195,7 @@ app.put("/todos/:id", connectEnsureLogin.ensureLoggedIn(), async (req, res) => {
   }
 });
 
+// eslint-disable-next-line no-unused-vars
 app.delete(
   "/todos/:id",
   connectEnsureLogin.ensureLoggedIn(),
