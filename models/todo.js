@@ -66,10 +66,14 @@ module.exports = (sequelize, DataTypes) => {
     setCompletionStatus(bool) {
       return this.update({ completed: bool });
     }
-
-    // markAsCompleted() {
-    //   return this.update({ completed: true });
-    // }
+    static remove(id, userId) {
+      this.destroy({
+        where: {
+          id,
+          userId,
+        },
+      });
+    }
   }
   Todo.init(
     {
